@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamid | SOC L1 Analyst & Cybersecurity Engineer</title>
+  <meta name="description" content="Hamid - SOC L1 Analyst specializing in Blue Team operations, DFIR, Threat Hunting, Detection Engineering, and VAPT. View projects, SOC reports, detection rules, and certifications.">
+  <meta name="keywords" content="SOC Analyst, Cybersecurity, Blue Team, DFIR, Threat Hunting, Detection Engineering, VAPT, Hamid">
+  <meta name="author" content="Hamid">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Hamid | SOC L1 Analyst & Cybersecurity Engineer">
+  <meta property="og:description" content="SOC L1 Analyst specializing in Blue Team operations, DFIR, Threat Hunting, and Detection Engineering.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hamidsec.dev">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Hamid | SOC L1 Analyst & Cybersecurity Engineer">
+  <meta name="twitter:description" content="SOC L1 Analyst specializing in Blue Team operations, DFIR, Threat Hunting, and Detection Engineering.">
+  <link rel="canonical" href="https://hamidsec.dev">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Hamid",
+    "jobTitle": "SOC L1 Analyst",
+    "description": "Cybersecurity Engineer specializing in Blue Team operations, DFIR, Threat Hunting, and Detection Engineering",
+    "url": "https://hamidsec.dev",
+    "sameAs": [
+      "https://github.com/hamidsec",
+      "https://linkedin.com/in/hamidsec"
+    ],
+    "knowsAbout": ["Cybersecurity", "SOC", "DFIR", "Threat Hunting", "Detection Engineering", "VAPT"]
+  }
+  </script>
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-logo">HAMID</div>
+    <div class="loading-bar"></div>
+    <div class="loading-text">Initializing Security Operations...</div>
+  </div>
+
+  <!-- Cursor Spotlight -->
+  <div class="cursor-spotlight" id="cursorSpotlight"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="#" class="nav-logo" aria-label="Home">
+        <div class="nav-logo-icon"><i class="fas fa-shield-halved"></i></div>
+        <span>HAMID</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#reports" class="nav-link">Reports</a></li>
+        <li><a href="#rules" class="nav-link">Rules</a></li>
+        <li><a href="#playbooks" class="nav-link">Playbooks</a></li>
+        <li><a href="#certs" class="nav-link">Certs</a></li>
+        <li><a href="#blog" class="nav-link">Blog</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-mobile-toggle" id="navMobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home" aria-label="Hero">
+    <div class="hero-particles" id="heroParticles">
+      <canvas id="particlesCanvas"></canvas>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="hero-badge">
+            <span class="pulse"></span>
+            <span>Available for Opportunities</span>
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Hamid</span>
+          </h1>
+          <div class="hero-typing">
+            <span id="typingText"></span><span class="cursor"></span>
+          </div>
+          <p class="hero-desc">
+            Defending digital infrastructure through advanced threat detection, 
+            incident response, and proactive security operations. Passionate about 
+            building resilient defenses and hunting adversaries.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-folder-open"></i> View Projects
+            </a>
+            <a href="#" class="btn btn-secondary" id="downloadResume">
+              <i class="fas fa-file-pdf"></i> Download Resume
+            </a>
+            <a href="#contact" class="btn btn-ghost">
+              <i class="fas fa-envelope"></i> Contact
+            </a>
+          </div>
+          <div class="hero-social">
+            <a href="https://github.com/hamidsec" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/hamidsec" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://twitter.com/hamidsec" class="social-link" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="https://tryhackme.com/p/hamidsec" class="social-link" aria-label="TryHackMe" target="_blank" rel="noopener noreferrer">
+              <i class="fas fa-flag"></i>
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-profile">
+            <div class="profile-glow"></div>
+            <div class="profile-ring"></div>
+            <div class="profile-image">
+              <span class="avatar-text">H</span>
+            </div>
+          </div>
+          <div class="hero-dashboard">
+            <div class="dashboard-header">
+              <span class="dashboard-dot"></span>
+              <span>SOC Dashboard</span>
+            </div>
+            <div class="dashboard-stats">
+              <div class="dashboard-stat">
+                <div class="dashboard-stat-value" data-count="247">0</div>
+                <div class="dashboard-stat-label">Alerts</div>
+              </div>
+              <div class="dashboard-stat">
+                <div class="dashboard-stat-value" data-count="18">0</div>
+                <div class="dashboard-stat-label">Incidents</div>
+              </div>
+              <div class="dashboard-stat">
+                <div class="dashboard-stat-value" data-count="99">0</div>
+                <div class="dashboard-stat-label">Uptime %</div>
+              </div>
+              <div class="dashboard-stat">
+                <div class="dashboard-stat-value" data-count="42">0</div>
+                <div class="dashboard-stat-label">Rules</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="scroll-mouse"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about" aria-label="About">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">About Me</div>
+        <h2 class="section-title">Who I Am</h2>
+        <p class="section-desc">A dedicated cybersecurity professional with a passion for defending digital assets and hunting threats.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h3>Defending the Digital Frontier</h3>
+          <p>I am a SOC L1 Analyst with hands-on experience in security operations, digital forensics, and incident response. My journey in cybersecurity began with a deep curiosity about how systems work and how they can be protected.</p>
+          <p>Today, I specialize in Blue Team operations, actively monitoring security events, analyzing threats, and developing detection rules to safeguard organizational assets. I am passionate about threat hunting, malware analysis, and building automated security solutions.</p>
+          <p>Currently interning at a leading security firm, I am expanding my expertise in detection engineering, SIEM optimization, and adversary simulation. I believe in continuous learning and contributing to the security community through open-source projects and knowledge sharing.</p>
+          <p><strong>Research Interests:</strong> Adversary Detection, Automated Threat Intelligence, Cloud Security, Automotive Cybersecurity (CAN Bus Security), and AI-driven Security Analytics.</p>
+        </div>
+        <div class="about-timeline reveal reveal-delay-2">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2024 - Present</div>
+            <div class="timeline-title">SOC L1 Analyst Intern</div>
+            <div class="timeline-desc">Security Operations Center - Monitoring, triaging alerts, and conducting initial incident investigations.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2023 - 2024</div>
+            <div class="timeline-title">Cybersecurity Researcher</div>
+            <div class="timeline-desc">Independent research in threat hunting, detection engineering, and automotive cybersecurity.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2020 - 2024</div>
+            <div class="timeline-title">B.S. Computer Science</div>
+            <div class="timeline-desc">Focus on Information Security, Network Defense, and Secure Software Development.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2019</div>
+            <div class="timeline-title">First CTF Competition</div>
+            <div class="timeline-desc">Discovered passion for cybersecurity through Capture The Flag competitions and bug bounty programs.</div>
+          </div>
+        </div>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card reveal">
+          <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+          <div class="stat-value" data-count="12">0</div>
+          <div class="stat-label">Projects</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-1">
+          <div class="stat-icon"><i class="fas fa-file-alt"></i></div>
+          <div class="stat-value" data-count="28">0</div>
+          <div class="stat-label">Reports</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-2">
+          <div class="stat-icon"><i class="fas fa-shield-alt"></i></div>
+          <div class="stat-value" data-count="45">0</div>
+          <div class="stat-label">Rules</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-3">
+          <div class="stat-icon"><i class="fas fa-book"></i></div>
+          <div class="stat-value" data-count="18">0</div>
+          <div class="stat-label">Playbooks</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section" id="skills" aria-label="Skills" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Expertise</div>
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-desc">A comprehensive toolkit built through hands-on experience in security operations and research.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <div class="skill-category-icon"><i class="fas fa-code"></i></div>
+            <h3 class="skill-category-title">Programming</h3>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">Python</span><span class="skill-percent">92%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="92"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">JavaScript</span><span class="skill-percent">78%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="78"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">SQL</span><span class="skill-percent">85%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">PowerShell</span><span class="skill-percent">80%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">Linux/Bash</span><span class="skill-percent">88%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="88"></div></div>
+          </div>
+        </div>
+        <div class="skill-category reveal reveal-delay-1">
+          <div class="skill-category-header">
+            <div class="skill-category-icon"><i class="fas fa-network-wired"></i></div>
+            <h3 class="skill-category-title">Networking & SOC</h3>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">Network Analysis</span><span class="skill-percent">90%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">Wazuh</span><span class="skill-percent">85%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">Splunk</span><span class="skill-percent">82%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="82"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">Elastic Stack</span><span class="skill-percent">80%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">Sysmon</span><span class="skill-percent">88%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="88"></div></div>
+          </div>
+        </div>
+        <div class="skill-category reveal reveal-delay-2">
+          <div class="skill-category-header">
+            <div class="skill-category-icon"><i class="fas fa-crosshairs"></i></div>
+            <h3 class="skill-category-title">Threat Intelligence</h3>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">Sigma Rules</span><span class="skill-percent">90%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">YARA</span><span class="skill-percent">85%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">MITRE ATT&CK</span><span class="skill-percent">92%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="92"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">Threat Hunting</span><span class="skill-percent">88%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="88"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">Incident Response</span><span class="skill-percent">86%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="86"></div></div>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <div class="skill-category-icon"><i class="fas fa-bug"></i></div>
+            <h3 class="skill-category-title">Malware & Forensics</h3>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">Malware Analysis</span><span class="skill-percent">82%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="82"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">Digital Forensics</span><span class="skill-percent">80%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">Reverse Engineering</span><span class="skill-percent">72%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="72"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">Memory Forensics</span><span class="skill-percent">75%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">OSINT</span><span class="skill-percent">85%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+          </div>
+        </div>
+        <div class="skill-category reveal reveal-delay-1">
+          <div class="skill-category-header">
+            <div class="skill-category-icon"><i class="fas fa-user-secret"></i></div>
+            <h3 class="skill-category-title">VAPT</h3>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">Burp Suite</span><span class="skill-percent">85%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">Nmap</span><span class="skill-percent">90%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">Wireshark</span><span class="skill-percent">88%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="88"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">Metasploit</span><span class="skill-percent">78%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="78"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">OWASP Testing</span><span class="skill-percent">84%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="84"></div></div>
+          </div>
+        </div>
+        <div class="skill-category reveal reveal-delay-2">
+          <div class="skill-category-header">
+            <div class="skill-category-icon"><i class="fas fa-cloud"></i></div>
+            <h3 class="skill-category-title">Cloud & DevSecOps</h3>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">AWS Security</span><span class="skill-percent">75%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">Azure Security</span><span class="skill-percent">72%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="72"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">Docker Security</span><span class="skill-percent">78%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="78"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">CI/CD Security</span><span class="skill-percent">70%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">Terraform</span><span class="skill-percent">68%</span></div>
+            <div class="skill-bar"><div class="skill-progress" data-width="68"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects" aria-label="Projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Portfolio</div>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-desc">A collection of security tools, research projects, and defensive solutions I've built.</p>
+      </div>
+      <div class="projects-filter reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="detection">Detection</button>
+        <button class="filter-btn" data-filter="forensics">Forensics</button>
+        <button class="filter-btn" data-filter="web">Web Security</button>
+        <button class="filter-btn" data-filter="automotive">Automotive</button>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card reveal" data-category="automotive">
+          <div class="project-image"><i class="fas fa-car"></i></div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Machine Learning</span>
+              <span class="project-tag">CAN Bus</span>
+            </div>
+            <h3 class="project-title">Explainable AI CAN Bus IDS</h3>
+            <p class="project-desc">An intrusion detection system for automotive CAN bus networks using explainable AI techniques to detect anomalies and provide interpretable threat indicators.</p>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+              <a href="#" class="project-link"><i class="fas fa-info-circle"></i> Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal reveal-delay-1" data-category="detection">
+          <div class="project-image"><i class="fas fa-chart-line"></i></div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Elastic</span>
+              <span class="project-tag">Node.js</span>
+            </div>
+            <h3 class="project-title">SOC Dashboard</h3>
+            <p class="project-desc">Real-time security operations dashboard integrating multiple data sources, alert management, and incident tracking with customizable widgets and reporting.</p>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+              <a href="#" class="project-link"><i class="fas fa-info-circle"></i> Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal reveal-delay-2" data-category="detection">
+          <div class="project-image"><i class="fas fa-shield-virus"></i></div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="project-tag">Sigma</span>
+              <span class="project-tag">YARA</span>
+              <span class="project-tag">Wazuh</span>
+            </div>
+            <h3 class="project-title">Detection Engineering Lab</h3>
+            <p class="project-desc">A comprehensive lab environment for developing, testing, and validating detection rules across multiple platforms including Sigma, YARA, Wazuh, and Elastic.</p>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+              <a href="#" class="project-link"><i class="fas fa-info-circle"></i> Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="forensics">
+          <div class="project-image"><i class="fas fa-search"></i></div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="project-tag">Jupyter</span>
+              <span class="project-tag">Python</span>
+              <span class="project-tag">ELK</span>
+            </div>
+            <h3 class="project-title">Threat Hunting Reports</h3>
+            <p class="project-desc">Collection of hypothesis-driven threat hunting campaigns with detailed methodologies, findings, and detection recommendations mapped to MITRE ATT&CK framework.</p>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+              <a href="#" class="project-link"><i class="fas fa-file-pdf"></i> Reports</a>
+              <a href="#" class="project-link"><i class="fas fa-info-circle"></i> Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal reveal-delay-1" data-category="automotive">
+          <div class="project-image"><i class="fas fa-microchip"></i></div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="project-tag">C++</span>
+              <span class="project-tag">Embedded</span>
+              <span class="project-tag">CAN</span>
+            </div>
+            <h3 class="project-title">Automotive IDS</h3>
+            <p class="project-desc">Lightweight intrusion detection system designed for embedded automotive controllers, implementing real-time CAN message analysis and anomaly detection.</p>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+              <a href="#" class="project-link"><i class="fas fa-info-circle"></i> Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal reveal-delay-2" data-category="forensics">
+          <div class="project-image"><i class="fas fa-virus"></i></div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Ghidra</span>
+              <span class="project-tag">REMnux</span>
+            </div>
+            <h3 class="project-title">Malware Analysis Suite</h3>
+            <p class="project-desc">Automated malware analysis pipeline combining static analysis, dynamic sandboxing, and behavioral detection to classify and extract IOCs from suspicious samples.</p>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+              <a href="#" class="project-link"><i class="fas fa-info-circle"></i> Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="web">
+          <div class="project-image"><i class="fas fa-vote-yea"></i></div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">Blockchain</span>
+              <span class="project-tag">Crypto</span>
+            </div>
+            <h3 class="project-title">Secure Voting System</h3>
+            <p class="project-desc">End-to-end encrypted voting platform with zero-knowledge proofs, ensuring voter anonymity while maintaining verifiability and preventing double-voting.</p>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+              <a href="#" class="project-link"><i class="fas fa-info-circle"></i> Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal reveal-delay-1" data-category="detection">
+          <div class="project-image"><i class="fas fa-robot"></i></div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">ML</span>
+              <span class="project-tag">SOAR</span>
+            </div>
+            <h3 class="project-title">SOAR Automation</h3>
+            <p class="project-desc">Security orchestration and automated response platform with playbook automation, case management, and integration with popular SIEM and EDR solutions.</p>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+              <a href="#" class="project-link"><i class="fas fa-info-circle"></i> Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal reveal-delay-2" data-category="web">
+          <div class="project-image"><i class="fas fa-lock"></i></div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="project-tag">Go</span>
+              <span class="project-tag">Rust</span>
+              <span class="project-tag">Auth</span>
+            </div>
+            <h3 class="project-title">Zero-Trust Gateway</h3>
+            <p class="project-desc">Implementation of a zero-trust network access gateway with device attestation, continuous authentication, and micro-segmentation capabilities.</p>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+              <a href="#" class="project-link"><i class="fas fa-info-circle"></i> Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOC Reports Section -->
+  <section class="section" id="reports" aria-label="SOC Reports" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Investigations</div>
+        <h2 class="section-title">SOC Reports</h2>
+        <p class="section-desc">Detailed incident reports with MITRE ATT&CK mapping, tool analysis, and remediation strategies.</p>
+      </div>
+      <div class="projects-filter reveal">
+        <button class="filter-btn active" data-filter-reports="all">All</button>
+        <button class="filter-btn" data-filter-reports="malware">Malware</button>
+        <button class="filter-btn" data-filter-reports="phishing">Phishing</button>
+        <button class="filter-btn" data-filter-reports="apt">APT</button>
+        <button class="filter-btn" data-filter-reports="insider">Insider Threat</button>
+      </div>
+      <div class="reports-grid">
+        <div class="report-card reveal" data-report-category="malware">
+          <div class="report-header">
+            <span class="report-difficulty difficulty-hard"><i class="fas fa-fire"></i> Hard</span>
+            <span class="report-mitre">T1055, T1059</span>
+          </div>
+          <h3 class="report-title">Ransomware Deployment Analysis</h3>
+          <p class="report-summary">Investigation of a Conti ransomware deployment through phishing email, lateral movement via PsExec, and domain-wide encryption. Full timeline reconstruction and IOC extraction.</p>
+          <div class="report-tools">
+            <span class="report-tool">Volatility</span>
+            <span class="report-tool">Splunk</span>
+            <span class="report-tool">YARA</span>
+            <span class="report-tool">Wireshark</span>
+          </div>
+          <div class="report-footer">
+            <span class="report-date">2024-03-15</span>
+            <a href="#" class="project-link"><i class="fas fa-file-pdf"></i> Download PDF</a>
+          </div>
+        </div>
+        <div class="report-card reveal reveal-delay-1" data-report-category="phishing">
+          <div class="report-header">
+            <span class="report-difficulty difficulty-medium"><i class="fas fa-bolt"></i> Medium</span>
+            <span class="report-mitre">T1566, T1078</span>
+          </div>
+          <h3 class="report-title">Business Email Compromise Campaign</h3>
+          <p class="report-summary">Analysis of a targeted BEC campaign using domain spoofing and credential harvesting. Tracked email flow, identified compromised accounts, and implemented DMARC/DKIM hardening.</p>
+          <div class="report-tools">
+            <span class="report-tool">Microsoft 365</span>
+            <span class="report-tool">Cuckoo</span>
+            <span class="report-tool">OSINT</span>
+          </div>
+          <div class="report-footer">
+            <span class="report-date">2024-02-28</span>
+            <a href="#" class="project-link"><i class="fas fa-file-pdf"></i> Download PDF</a>
+          </div>
+        </div>
+        <div class="report-card reveal" data-report-category="apt">
+          <div class="report-header">
+            <span class="report-difficulty difficulty-hard"><i class="fas fa-fire"></i> Hard</span>
+            <span class="report-mitre">T1190, T1059, T1003</span>
+          </div>
+          <h3 class="report-title">APT29-Style Supply Chain Attack</h3>
+          <p class="report-summary">Simulated investigation of a supply chain compromise leveraging SolarWinds-style techniques. Covered initial access, persistence via DLL sideloading, and C2 beaconing detection.</p>
+          <div class="report-tools">
+            <span class="report-tool">Elastic</span>
+            <span class="report-tool">Sysmon</span>
+            <span class="report-tool">Sigma</span>
+            <span class="report-tool">Velociraptor</span>
+          </div>
+          <div class="report-footer">
+            <span class="report-date">2024-01-20</span>
+            <a href="#" class="project-link"><i class="fas fa-file-pdf"></i> Download PDF</a>
+          </div>
+        </div>
+        <div class="report-card reveal reveal-delay-1" data-report-category="insider">
+          <div class="report-header">
+            <span class="report-difficulty difficulty-medium"><i class="fas fa-bolt"></i> Medium</span>
+            <span class="report-mitre">T1048, T1020, T1071</span>
+          </div>
+          <h3 class="report-title">Insider Threat Data Exfiltration</h3>
+          <p class="report-summary">Investigation of unauthorized data exfiltration by a privileged user. Analyzed DLP alerts, proxy logs, and USB device usage to build a comprehensive evidence timeline.</p>
+          <div class="report-tools">
+            <span class="report-tool">DLP</span>
+            <span class="report-tool">Proxy Logs</span>
+            <span class="report-tool">Windows Event Logs</span>
+          </div>
+          <div class="report-footer">
+            <span class="report-date">2023-12-10</span>
+            <a href="#" class="project-link"><i class="fas fa-file-pdf"></i> Download PDF</a>
+          </div>
+        </div>
+        <div class="report-card reveal" data-report-category="malware">
+          <div class="report-header">
+            <span class="report-difficulty difficulty-easy"><i class="fas fa-leaf"></i> Easy</span>
+            <span class="report-mitre">T1059, T1105</span>
+          </div>
+          <h3 class="report-title">PowerShell Empire C2 Detection</h3>
+          <p class="report-summary">Detection and analysis of PowerShell Empire agent activity on endpoints. Focused on AMSI bypass attempts, reflective DLL injection, and encoded command detection.</p>
+          <div class="report-tools">
+            <span class="report-tool">Wazuh</span>
+            <span class="report-tool">PowerShell</span>
+            <span class="report-tool">PEStudio</span>
+          </div>
+          <div class="report-footer">
+            <span class="report-date">2023-11-05</span>
+            <a href="#" class="project-link"><i class="fas fa-file-pdf"></i> Download PDF</a>
+          </div>
+        </div>
+        <div class="report-card reveal reveal-delay-1" data-report-category="apt">
+          <div class="report-header">
+            <span class="report-difficulty difficulty-hard"><i class="fas fa-fire"></i> Hard</span>
+            <span class="report-mitre">T1071, T1041, T1573</span>
+          </div>
+          <h3 class="report-title">Cobalt Strike Beacon Analysis</h3>
+          <p class="report-summary">Deep dive into Cobalt Strike beacon configuration extraction, Malleable C2 profile analysis, and network traffic decryption to understand attacker TTPs and infrastructure.</p>
+          <div class="report-tools">
+            <span class="report-tool">CS Extractor</span>
+            <span class="report-tool">Wireshark</span>
+            <span class="report-tool">Python</span>
+            <span class="report-tool">Suricata</span>
+          </div>
+          <div class="report-footer">
+            <span class="report-date">2023-10-18</span>
+            <a href="#" class="project-link"><i class="fas fa-file-pdf"></i> Download PDF</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detection Rules Section -->
+  <section class="section" id="rules" aria-label="Detection Rules">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Detection Engineering</div>
+        <h2 class="section-title">Detection Rules</h2>
+        <p class="section-desc">Curated detection rules for various security platforms, mapped to MITRE ATT&CK.</p>
+      </div>
+      <div class="rules-tabs reveal">
+        <button class="rules-tab active" data-tab="sigma"><i class="fas fa-file-code"></i> Sigma</button>
+        <button class="rules-tab" data-tab="yara"><i class="fas fa-fingerprint"></i> YARA</button>
+        <button class="rules-tab" data-tab="wazuh"><i class="fas fa-bell"></i> Wazuh</button>
+        <button class="rules-tab" data-tab="sysmon"><i class="fas fa-desktop"></i> Sysmon</button>
+        <button class="rules-tab" data-tab="elastic"><i class="fas fa-search"></i> Elastic</button>
+      </div>
+      <div class="rules-content active" id="tab-sigma">
+        <div class="rules-grid">
+          <div class="rule-card reveal">
+            <div class="rule-header">
+              <span class="rule-title">Suspicious PowerShell Download</span>
+              <span class="rule-lang lang-sigma">Sigma</span>
+            </div>
+            <div class="rule-code">
+              <pre><span class="syntax-key">title:</span> <span class="syntax-string">Suspicious PowerShell Download</span>
+<span class="syntax-key">status:</span> <span class="syntax-string">stable</span>
+<span class="syntax-key">description:</span> <span class="syntax-string">Detects suspicious PowerShell download commands</span>
+<span class="syntax-key">logsource:</span>
+  <span class="syntax-key">product:</span> <span class="syntax-string">windows</span>
+  <span class="syntax-key">service:</span> <span class="syntax-string">powershell</span>
+<span class="syntax-key">detection:</span>
+  <span class="syntax-key">selection:</span>
+    <span class="syntax-key">CommandLine|contains:</span>
+      - <span class="syntax-string">"IEX(New-Object Net.WebClient)"</span>
+      - <span class="syntax-string">"downloadstring"</span>
+      - <span class="syntax-string">"bitsadmin"</span>
+  <span class="syntax-key">condition:</span> <span class="syntax-string">selection</span>
+<span class="syntax-key">tags:</span>
+  - <span class="syntax-string">attack.execution</span>
+  - <span class="syntax-string">attack.t1059.001</span></pre>
+            </div>
+          </div>
+          <div class="rule-card reveal reveal-delay-1">
+            <div class="rule-header">
+              <span class="rule-title">LSASS Memory Access</span>
+              <span class="rule-lang lang-sigma">Sigma</span>
+            </div>
+            <div class="rule-code">
+              <pre><span class="syntax-key">title:</span> <span class="syntax-string">LSASS Memory Access</span>
+<span class="syntax-key">status:</span> <span class="syntax-string">stable</span>
+<span class="syntax-key">description:</span> <span class="syntax-string">Detects memory access to LSASS</span>
+<span class="syntax-key">logsource:</span>
+  <span class="syntax-key">product:</span> <span class="syntax-string">windows</span>
+  <span class="syntax-key">service:</span> <span class="syntax-string">sysmon</span>
+<span class="syntax-key">detection:</span>
+  <span class="syntax-key">selection:</span>
+    <span class="syntax-key">EventID:</span> <span class="syntax-number">10</span>
+    <span class="syntax-key">TargetImage|endswith:</span> <span class="syntax-string">"lsass.exe"</span>
+    <span class="syntax-key">GrantedAccess|contains:</span>
+      - <span class="syntax-string">"0x1010"</span>
+      - <span class="syntax-string">"0x1410"</span>
+  <span class="syntax-key">condition:</span> <span class="syntax-string">selection</span>
+<span class="syntax-key">tags:</span>
+  - <span class="syntax-string">attack.credential_access</span>
+  - <span class="syntax-string">attack.t1003.001</span></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rules-content" id="tab-yara">
+        <div class="rules-grid">
+          <div class="rule-card reveal">
+            <div class="rule-header">
+              <span class="rule-title">Cobalt Strike Beacon</span>
+              <span class="rule-lang lang-yara">YARA</span>
+            </div>
+            <div class="rule-code">
+              <pre><span class="syntax-key">rule</span> <span class="syntax-string">CobaltStrike_Beacon</span> {
+  <span class="syntax-key">meta:</span>
+    <span class="syntax-key">author:</span> <span class="syntax-string">"Hamid"</span>
+    <span class="syntax-key">description:</span> <span class="syntax-string">"Detects Cobalt Strike beacon"</span>
+    <span class="syntax-key">date:</span> <span class="syntax-string">"2024-01-15"</span>
+  <span class="syntax-key">strings:</span>
+    <span class="syntax-key">$a</span> = <span class="syntax-string">"beacon.dll"</span> <span class="syntax-key">nocase</span>
+    <span class="syntax-key">$b</span> = <span class="syntax-string">"%s as "%s"</span>
+    <span class="syntax-key">$c</span> = <span class="syntax-string">{ 4D 5A }</span>
+  <span class="syntax-key">condition:</span>
+    <span class="syntax-key">uint16</span>(<span class="syntax-number">0</span>) == <span class="syntax-number">0x5A4D</span> <span class="syntax-key">and</span>
+    <span class="syntax-key">filesize</span> < <span class="syntax-number">5000KB</span> <span class="syntax-key">and</span>
+    <span class="syntax-key">all of them</span>
+}</pre>
+            </div>
+          </div>
+          <div class="rule-card reveal reveal-delay-1">
+            <div class="rule-header">
+              <span class="rule-title">Ransomware File Extensions</span>
+              <span class="rule-lang lang-yara">YARA</span>
+            </div>
+            <div class="rule-code">
+              <pre><span class="syntax-key">rule</span> <span class="syntax-string">Ransomware_Indicators</span> {
+  <span class="syntax-key">meta:</span>
+    <span class="syntax-key">author:</span> <span class="syntax-string">"Hamid"</span>
+    <span class="syntax-key">description:</span> <span class="syntax-string">"Ransomware file markers"</span>
+  <span class="syntax-key">strings:</span>
+    <span class="syntax-key">$ext1</span> = <span class="syntax-string">".locked"</span>
+    <span class="syntax-key">$ext2</span> = <span class="syntax-string">".encrypted"</span>
+    <span class="syntax-key">$note</span> = <span class="syntax-string">"README_DECRYPT"</span>
+    <span class="syntax-key">$btc</span> = <span class="syntax-string">/1[a-km-zA-HJ-NP-Z1-9]{25,34}/</span>
+  <span class="syntax-key">condition:</span>
+    <span class="syntax-key">any of them</span>
+}</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rules-content" id="tab-wazuh">
+        <div class="rules-grid">
+          <div class="rule-card reveal">
+            <div class="rule-header">
+              <span class="rule-title">Brute Force Detection</span>
+              <span class="rule-lang lang-wazuh">Wazuh</span>
+            </div>
+            <div class="rule-code">
+              <pre><span class="syntax-key">&lt;group name="authentication_failure,"&gt;</span>
+  <span class="syntax-key">&lt;rule id="100100" level="10"&gt;</span>
+    <span class="syntax-key">&lt;if_sid&gt;</span><span class="syntax-string">5716</span><span class="syntax-key">&lt;/if_sid&gt;</span>
+    <span class="syntax-key">&lt;options&gt;</span><span class="syntax-string">alert_by_email</span><span class="syntax-key">&lt;/options&gt;</span>
+    <span class="syntax-key">&lt;frequency&gt;</span><span class="syntax-number">8</span><span class="syntax-key">&lt;/frequency&gt;</span>
+    <span class="syntax-key">&lt;timeframe&gt;</span><span class="syntax-number">120</span><span class="syntax-key">&lt;/timeframe&gt;</span>
+    <span class="syntax-key">&lt;description&gt;</span><span class="syntax-string">Multiple SSH authentication failures</span><span class="syntax-key">&lt;/description&gt;</span>
+    <span class="syntax-key">&lt;group&gt;</span><span class="syntax-string">authentication_failures,</span><span class="syntax-key">&lt;/group&gt;</span>
+  <span class="syntax-key">&lt;/rule&gt;</span>
+<span class="syntax-key">&lt;/group&gt;</span></pre>
+            </div>
+          </div>
+          <div class="rule-card reveal reveal-delay-1">
+            <div class="rule-header">
+              <span class="rule-title">Web Shell Upload</span>
+              <span class="rule-lang lang-wazuh">Wazuh</span>
+            </div>
+            <div class="rule-code">
+              <pre><span class="syntax-key">&lt;group name="web,accesslog,"&gt;</span>
+  <span class="syntax-key">&lt;rule id="100200" level="12"&gt;</span>
+    <span class="syntax-key">&lt;decoded_as&gt;</span><span class="syntax-string">web-accesslog</span><span class="syntax-key">&lt;/decoded_as&gt;</span>
+    <span class="syntax-key">&lt;match&gt;</span><span class="syntax-string">.php|.jsp|.asp|.aspx</span><span class="syntax-key">&lt;/match&gt;</span>
+    <span class="syntax-key">&lt;regex&gt;</span><span class="syntax-string">POST .*upload</span><span class="syntax-key">&lt;/regex&gt;</span>
+    <span class="syntax-key">&lt;description&gt;</span><span class="syntax-string">Potential web shell upload detected</span><span class="syntax-key">&lt;/description&gt;</span>
+    <span class="syntax-key">&lt;group&gt;</span><span class="syntax-string">web_attack,</span><span class="syntax-key">&lt;/group&gt;</span>
+  <span class="syntax-key">&lt;/rule&gt;</span>
+<span class="syntax-key">&lt;/group&gt;</span></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rules-content" id="tab-sysmon">
+        <div class="rules-grid">
+          <div class="rule-card reveal">
+            <div class="rule-header">
+              <span class="rule-title">Process Injection Detection</span>
+              <span class="rule-lang lang-sysmon">Sysmon</span>
+            </div>
+            <div class="rule-code">
+              <pre><span class="syntax-key">&lt;RuleGroup name="" groupRelation="or"&gt;</span>
+  <span class="syntax-key">&lt;ProcessAccess onmatch="include"&gt;</span>
+    <span class="syntax-key">&lt;TargetImage condition="end with"&gt;</span><span class="syntax-string">lsass.exe</span><span class="syntax-key">&lt;/TargetImage&gt;</span>
+    <span class="syntax-key">&lt;GrantedAccess condition="contains any"&gt;</span><span class="syntax-string">0x1010;0x1410;0x143A;0x1430</span><span class="syntax-key">&lt;/GrantedAccess&gt;</span>
+    <span class="syntax-key">&lt;CallTrace condition="contains"&gt;</span><span class="syntax-string">UNKNOWN</span><span class="syntax-key">&lt;/CallTrace&gt;</span>
+  <span class="syntax-key">&lt;/ProcessAccess&gt;</span>
+<span class="syntax-key">&lt;/RuleGroup&gt;</span></pre>
+            </div>
+          </div>
+          <div class="rule-card reveal reveal-delay-1">
+            <div class="rule-header">
+              <span class="rule-title">WMI Event Subscription</span>
+              <span class="rule-lang lang-sysmon">Sysmon</span>
+            </div>
+            <div class="rule-code">
+              <pre><span class="syntax-key">&lt;RuleGroup name="" groupRelation="or"&gt;</span>
+  <span class="syntax-key">&lt;WmiEvent onmatch="include"&gt;</span>
+    <span class="syntax-key">&lt;Operation condition="is"&gt;</span><span class="syntax-string">Created</span><span class="syntax-key">&lt;/Operation&gt;</span>
+    <span class="syntax-key">&lt;EventNamespace condition="is"&gt;</span><span class="syntax-string">root\subscription</span><span class="syntax-key">&lt;/EventNamespace&gt;</span>
+  <span class="syntax-key">&lt;/WmiEvent&gt;</span>
+<span class="syntax-key">&lt;/RuleGroup&gt;</span></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rules-content" id="tab-elastic">
+        <div class="rules-grid">
+          <div class="rule-card reveal">
+            <div class="rule-header">
+              <span class="rule-title">Mimikatz Execution</span>
+              <span class="rule-lang lang-elastic">Elastic</span>
+            </div>
+            <div class="rule-code">
+              <pre><span class="syntax-key">{</span>
+  <span class="syntax-key">"rule_id":</span> <span class="syntax-string">"mimikatz-execution"</span><span class="syntax-key">,</span>
+  <span class="syntax-key">"name":</span> <span class="syntax-string">"Mimikatz Execution Detection"</span><span class="syntax-key">,</span>
+  <span class="syntax-key">"type":</span> <span class="syntax-string">"query"</span><span class="syntax-key">,</span>
+  <span class="syntax-key">"query":</span> <span class="syntax-string">"process.name:mimikatz.exe OR process.args:*sekurlsa*"</span><span class="syntax-key">,</span>
+  <span class="syntax-key">"threat": [</span>
+    <span class="syntax-key">{</span>
+      <span class="syntax-key">"framework":</span> <span class="syntax-string">"MITRE ATT&CK"</span><span class="syntax-key">,</span>
+      <span class="syntax-key">"technique": [{ "id":</span> <span class="syntax-string">"T1003.001"</span> <span class="syntax-key">}]</span>
+    <span class="syntax-key">}</span>
+  <span class="syntax-key">]</span>
+<span class="syntax-key">}</span></pre>
+            </div>
+          </div>
+          <div class="rule-card reveal reveal-delay-1">
+            <div class="rule-header">
+              <span class="rule-title">Suspicious Scheduled Task</span>
+              <span class="rule-lang lang-elastic">Elastic</span>
+            </div>
+            <div class="rule-code">
+              <pre><span class="syntax-key">{</span>
+  <span class="syntax-key">"rule_id":</span> <span class="syntax-string">"suspicious-scheduled-task"</span><span class="syntax-key">,</span>
+  <span class="syntax-key">"name":</span> <span class="syntax-string">"Suspicious Scheduled Task Creation"</span><span class="syntax-key">,</span>
+  <span class="syntax-key">"type":</span> <span class="syntax-string">"eql"</span><span class="syntax-key">,</span>
+  <span class="syntax-key">"query":</span> <span class="syntax-string">"process where event.type == \"start\" and process.name == \"schtasks.exe\" and process.args : (\"*/create*\", \"*/ru system*\")"</span><span class="syntax-key">,</span>
+  <span class="syntax-key">"threat": [</span>
+    <span class="syntax-key">{</span>
+      <span class="syntax-key">"framework":</span> <span class="syntax-string">"MITRE ATT&CK"</span><span class="syntax-key">,</span>
+      <span class="syntax-key">"technique": [{ "id":</span> <span class="syntax-string">"T1053.005"</span> <span class="syntax-key">}]</span>
+    <span class="syntax-key">}</span>
+  <span class="syntax-key">]</span>
+<span class="syntax-key">}</span></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Playbooks Section -->
+  <section class="section" id="playbooks" aria-label="Playbooks" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Procedures</div>
+        <h2 class="section-title">Incident Response Playbooks</h2>
+        <p class="section-desc">Standardized response procedures for common security incidents.</p>
+      </div>
+      <div class="playbooks-grid">
+        <div class="playbook-item reveal">
+          <div class="playbook-header">
+            <div class="playbook-info">
+              <div class="playbook-icon"><i class="fas fa-envelope-open-text"></i></div>
+              <div>
+                <div class="playbook-title">Phishing Incident Response</div>
+                <div class="playbook-meta">T1566 - Initial Access | ~30 min</div>
+              </div>
+            </div>
+            <div class="playbook-toggle"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="playbook-content">
+            <div class="playbook-body">
+              <div class="playbook-step"><div class="step-number">1</div><div class="step-text">Isolate the affected endpoint from the network to prevent lateral movement.</div></div>
+              <div class="playbook-step"><div class="step-number">2</div><div class="step-text">Preserve email headers and original message for forensic analysis.</div></div>
+              <div class="playbook-step"><div class="step-number">3</div><div class="step-text">Analyze attachments/sandbox URLs to determine payload and C2 infrastructure.</div></div>
+              <div class="playbook-step"><div class="step-number">4</div><div class="step-text">Check for credential compromise via sign-in logs and MFA status.</div></div>
+              <div class="playbook-step"><div class="step-number">5</div><div class="step-text">Reset compromised credentials and force MFA re-enrollment if needed.</div></div>
+              <div class="playbook-step"><div class="step-number">6</div><div class="step-text">Update email gateway rules and user awareness training materials.</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="playbook-item reveal reveal-delay-1">
+          <div class="playbook-header">
+            <div class="playbook-info">
+              <div class="playbook-icon"><i class="fas fa-lock"></i></div>
+              <div>
+                <div class="playbook-title">Ransomware Response</div>
+                <div class="playbook-meta">T1486 - Impact | ~2 hours</div>
+              </div>
+            </div>
+            <div class="playbook-toggle"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="playbook-content">
+            <div class="playbook-body">
+              <div class="playbook-step"><div class="step-number">1</div><div class="step-text">Activate incident response team and establish command structure.</div></div>
+              <div class="playbook-step"><div class="step-number">2</div><div class="step-text">Isolate affected systems immediately - disconnect network, disable WiFi/Bluetooth.</div></div>
+              <div class="playbook-step"><div class="step-number">3</div><div class="step-text">Identify patient zero through timeline analysis of initial access vector.</div></div>
+              <div class="playbook-step"><div class="step-number">4</div><div class="step-text">Preserve forensic images of affected systems before any remediation.</div></div>
+              <div class="playbook-step"><div class="step-number">5</div><div class="step-text">Determine ransomware variant and check for decryptor availability.</div></div>
+              <div class="playbook-step"><div class="step-number">6</div><div class="step-text">Restore from clean backups after verifying backup integrity.</div></div>
+              <div class="playbook-step"><div class="step-number">7</div><div class="step-text">Conduct post-incident review and update detection rules.</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="playbook-item reveal reveal-delay-2">
+          <div class="playbook-header">
+            <div class="playbook-info">
+              <div class="playbook-icon"><i class="fas fa-user-shield"></i></div>
+              <div>
+                <div class="playbook-title">Privilege Escalation</div>
+                <div class="playbook-meta">T1068 - Privilege Escalation | ~45 min</div>
+              </div>
+            </div>
+            <div class="playbook-toggle"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="playbook-content">
+            <div class="playbook-body">
+              <div class="playbook-step"><div class="step-number">1</div><div class="step-text">Identify the account that escalated privileges and method used.</div></div>
+              <div class="playbook-step"><div class="step-number">2</div><div class="step-text">Review authentication logs for suspicious login patterns.</div></div>
+              <div class="playbook-step"><div class="step-number">3</div><div class="step-text">Check for exploitation of known vulnerabilities on the system.</div></div>
+              <div class="playbook-step"><div class="step-number">4</div><div class="step-text">Disable compromised accounts and revoke active sessions.</div></div>
+              <div class="playbook-step"><div class="step-number">5</div><div class="step-text">Apply security patches and update privilege monitoring rules.</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="playbook-item reveal">
+          <div class="playbook-header">
+            <div class="playbook-info">
+              <div class="playbook-icon"><i class="fas fa-bug"></i></div>
+              <div>
+                <div class="playbook-title">Malware Outbreak</div>
+                <div class="playbook-meta">T1204 - Execution | ~1 hour</div>
+              </div>
+            </div>
+            <div class="playbook-toggle"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="playbook-content">
+            <div class="playbook-body">
+              <div class="playbook-step"><div class="step-number">1</div><div class="step-text">Contain the outbreak by isolating infected endpoints from the network.</div></div>
+              <div class="playbook-step"><div class="step-number">2</div><div class="step-text">Collect malware samples for sandbox analysis and IOC extraction.</div></div>
+              <div class="playbook-step"><div class="step-number">3</div><div class="step-text">Search enterprise-wide for IOCs using EDR and SIEM tools.</div></div>
+              <div class="playbook-step"><div class="step-number">4</div><div class="step-text">Block C2 domains/IPs at firewall and DNS levels.</div></div>
+              <div class="playbook-step"><div class="step-number">5</div><div class="step-text">Deploy YARA rules and update AV signatures across endpoints.</div></div>
+              <div class="playbook-step"><div class="step-number">6</div><div class="step-text">Verify eradication through repeated scans and behavioral monitoring.</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="playbook-item reveal reveal-delay-1">
+          <div class="playbook-header">
+            <div class="playbook-info">
+              <div class="playbook-icon"><i class="fas fa-ban"></i></div>
+              <div>
+                <div class="playbook-title">Data Exfiltration Containment</div>
+                <div class="playbook-meta">T1041 - Exfiltration | ~1.5 hours</div>
+              </div>
+            </div>
+            <div class="playbook-toggle"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="playbook-content">
+            <div class="playbook-body">
+              <div class="playbook-step"><div class="step-number">1</div><div class="step-text">Identify data access patterns and classify affected data sensitivity.</div></div>
+              <div class="playbook-step"><div class="step-number">2</div><div class="step-text">Block identified exfiltration channels (cloud uploads, email, USB).</div></div>
+              <div class="playbook-step"><div class="step-number">3</div><div class="step-text">Revoke compromised credentials and force password resets.</div></div>
+              <div class="playbook-step"><div class="step-number">4</div><div class="step-text">Enhance DLP policies and implement stricter egress filtering.</div></div>
+              <div class="playbook-step"><div class="step-number">5</div><div class="step-text">Notify stakeholders and legal/compliance teams per data breach protocol.</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="playbook-item reveal reveal-delay-2">
+          <div class="playbook-header">
+            <div class="playbook-info">
+              <div class="playbook-icon"><i class="fas fa-undo"></i></div>
+              <div>
+                <div class="playbook-title">System Recovery</div>
+                <div class="playbook-meta">Post-Incident | ~4 hours</div>
+              </div>
+            </div>
+            <div class="playbook-toggle"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="playbook-content">
+            <div class="playbook-body">
+              <div class="playbook-step"><div class="step-number">1</div><div class="step-text">Verify threat eradication through comprehensive system scans.</div></div>
+              <div class="playbook-step"><div class="step-number">2</div><div class="step-text">Rebuild affected systems from known-good images or clean installs.</div></div>
+              <div class="playbook-step"><div class="step-number">3</div><div class="step-text">Restore data from verified clean backups with integrity checks.</div></div>
+              <div class="playbook-step"><div class="step-number">4</div><div class="step-text">Re-image and rejoin systems to domain with updated GPOs.</div></div>
+              <div class="playbook-step"><div class="step-number">5</div><div class="step-text">Monitor restored systems for 72 hours for any residual activity.</div></div>
+              <div class="playbook-step"><div class="step-number">6</div><div class="step-text">Document lessons learned and update IR plan and playbooks.</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section class="section" id="certs" aria-label="Certifications">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Credentials</div>
+        <h2 class="section-title">Certifications</h2>
+        <p class="section-desc">Professional certifications and continuous learning achievements.</p>
+      </div>
+      <div class="certs-timeline">
+        <div class="cert-item reveal">
+          <div class="cert-content">
+            <div class="cert-badge"><i class="fab fa-microsoft"></i></div>
+            <div class="cert-title">Microsoft Certified: Security Operations Analyst</div>
+            <div class="cert-issuer">Microsoft</div>
+            <div class="cert-date">2024</div>
+          </div>
+        </div>
+        <div class="cert-item reveal reveal-delay-1">
+          <div class="cert-content">
+            <div class="cert-badge"><i class="fab fa-google"></i></div>
+            <div class="cert-title">Google Cybersecurity Certificate</div>
+            <div class="cert-issuer">Google</div>
+            <div class="cert-date">2024</div>
+          </div>
+        </div>
+        <div class="cert-item reveal reveal-delay-2">
+          <div class="cert-content">
+            <div class="cert-badge"><i class="fas fa-network-wired"></i></div>
+            <div class="cert-title">CCNA CyberOps</div>
+            <div class="cert-issuer">Cisco</div>
+            <div class="cert-date">2023</div>
+          </div>
+        </div>
+        <div class="cert-item reveal">
+          <div class="cert-content">
+            <div class="cert-badge"><i class="fas fa-shield-alt"></i></div>
+            <div class="cert-title">Cybersecurity Analyst Professional</div>
+            <div class="cert-issuer">IBM</div>
+            <div class="cert-date">2023</div>
+          </div>
+        </div>
+        <div class="cert-item reveal reveal-delay-1">
+          <div class="cert-content">
+            <div class="cert-badge"><i class="fas fa-lock"></i></div>
+            <div class="cert-title">NSE 1-3 Network Security Associate</div>
+            <div class="cert-issuer">Fortinet</div>
+            <div class="cert-date">2023</div>
+          </div>
+        </div>
+        <div class="cert-item reveal reveal-delay-2">
+          <div class="cert-content">
+            <div class="cert-badge"><i class="fas fa-user-secret"></i></div>
+            <div class="cert-title">Certified Ethical Hacker (CEH)</div>
+            <div class="cert-issuer">EC-Council</div>
+            <div class="cert-date">2023</div>
+          </div>
+        </div>
+        <div class="cert-item reveal">
+          <div class="cert-content">
+            <div class="cert-badge"><i class="fas fa-flag"></i></div>
+            <div class="cert-title">Top 1% - TryHackMe</div>
+            <div class="cert-issuer">TryHackMe</div>
+            <div class="cert-date">2024</div>
+          </div>
+        </div>
+        <div class="cert-item reveal reveal-delay-1">
+          <div class="cert-content">
+            <div class="cert-badge"><i class="fas fa-cube"></i></div>
+            <div class="cert-title">Hack The Box Pro Hacker</div>
+            <div class="cert-issuer">Hack The Box</div>
+            <div class="cert-date">2024</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section class="section" id="blog" aria-label="Blog" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Insights</div>
+        <h2 class="section-title">Security Blog</h2>
+        <p class="section-desc">Articles, write-ups, and research findings from the frontlines of cybersecurity.</p>
+      </div>
+      <div class="blog-search reveal">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search articles..." id="blogSearch">
+      </div>
+      <div class="blog-categories reveal">
+        <button class="filter-btn active" data-filter-blog="all">All</button>
+        <button class="filter-btn" data-filter-blog="threat-hunting">Threat Hunting</button>
+        <button class="filter-btn" data-filter-blog="detection">Detection</button>
+        <button class="filter-btn" data-filter-blog="forensics">Forensics</button>
+        <button class="filter-btn" data-filter-blog="research">Research</button>
+      </div>
+      <div class="blog-grid">
+        <article class="blog-card reveal" data-blog-category="threat-hunting">
+          <div class="blog-image"><i class="fas fa-crosshairs"></i></div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-category">Threat Hunting</span>
+              <span class="blog-readtime"><i class="far fa-clock"></i> 12 min</span>
+            </div>
+            <h3 class="blog-title">Hunting for Living Off The Land Binaries</h3>
+            <p class="blog-excerpt">A methodology for detecting LOLBAS techniques using behavioral analytics and Sigma rules. Covers real-world hunting scenarios.</p>
+          </div>
+        </article>
+        <article class="blog-card reveal reveal-delay-1" data-blog-category="detection">
+          <div class="blog-image"><i class="fas fa-shield-virus"></i></div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-category">Detection</span>
+              <span class="blog-readtime"><i class="far fa-clock"></i> 8 min</span>
+            </div>
+            <h3 class="blog-title">Building Effective Sigma Rules</h3>
+            <p class="blog-excerpt">Best practices for writing maintainable, high-fidelity Sigma rules with proper logsource definitions and field mappings.</p>
+          </div>
+        </article>
+        <article class="blog-card reveal reveal-delay-2" data-blog-category="forensics">
+          <div class="blog-image"><i class="fas fa-memory"></i></div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-category">Forensics</span>
+              <span class="blog-readtime"><i class="far fa-clock"></i> 15 min</span>
+            </div>
+            <h3 class="blog-title">Windows Memory Forensics with Volatility</h3>
+            <p class="blog-excerpt">Step-by-step guide to analyzing Windows memory dumps for malware artifacts, network connections, and process injection.</p>
+          </div>
+        </article>
+        <article class="blog-card reveal" data-blog-category="research">
+          <div class="blog-image"><i class="fas fa-car"></i></div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-category">Research</span>
+              <span class="blog-readtime"><i class="far fa-clock"></i> 20 min</span>
+            </div>
+            <h3 class="blog-title">CAN Bus Security: Attacks and Defenses</h3>
+            <p class="blog-excerpt">Exploring the attack surface of modern vehicle networks and implementing intrusion detection for automotive systems.</p>
+          </div>
+        </article>
+        <article class="blog-card reveal reveal-delay-1" data-blog-category="detection">
+          <div class="blog-image"><i class="fas fa-robot"></i></div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-category">Detection</span>
+              <span class="blog-readtime"><i class="far fa-clock"></i> 10 min</span>
+            </div>
+            <h3 class="blog-title">Automating Threat Detection with SOAR</h3>
+            <p class="blog-excerpt">How to build automated response playbooks that reduce MTTR and improve SOC efficiency through orchestration.</p>
+          </div>
+        </article>
+        <article class="blog-card reveal reveal-delay-2" data-blog-category="threat-hunting">
+          <div class="blog-image"><i class="fas fa-user-secret"></i></div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-category">Threat Hunting</span>
+              <span class="blog-readtime"><i class="far fa-clock"></i> 14 min</span>
+            </div>
+            <h3 class="blog-title">APT29 TTPs: A Hunter's Perspective</h3>
+            <p class="blog-excerpt">Analyzing known APT29 techniques and developing hunting hypotheses to detect their sophisticated tradecraft.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact" aria-label="Contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Get In Touch</div>
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-desc">Open to opportunities, collaborations, and security discussions.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Let's Secure the Future Together</h3>
+          <p>Whether you're looking for a dedicated SOC analyst, need help with threat detection, or want to discuss the latest in cybersecurity research, I'd love to hear from you.</p>
+          <div class="contact-details">
+            <div class="contact-detail">
+              <div class="contact-detail-icon"><i class="fas fa-envelope"></i></div>
+              <div class="contact-detail-text">
+                <strong>Email</strong>
+                <span>hamid@securityops.dev</span>
+                <button class="copy-email-btn" id="copyEmail" data-email="hamid@securityops.dev">
+                  <i class="fas fa-copy"></i> <span>Copy</span>
+                </button>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div class="contact-detail-text">
+                <strong>LinkedIn</strong>
+                <span>linkedin.com/in/hamidsec</span>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon"><i class="fab fa-github"></i></div>
+              <div class="contact-detail-text">
+                <strong>GitHub</strong>
+                <span>github.com/hamidsec</span>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="contact-detail-text">
+                <strong>Location</strong>
+                <span>Remote / Global</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrapper reveal reveal-delay-2">
+          <form id="contactForm" action="#" method="POST">
+            <div class="form-group">
+              <label class="form-label" for="name">Name</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" class="form-input" placeholder="What's this about?" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Message</label>
+              <textarea id="message" name="message" class="form-input" placeholder="Your message..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <div class="nav-logo-icon"><i class="fas fa-shield-halved"></i></div>
+            <span>HAMID</span>
+          </div>
+          <p class="footer-desc">SOC L1 Analyst passionate about defending digital infrastructure and hunting advanced threats.</p>
+          <div class="footer-social">
+            <a href="https://github.com/hamidsec" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/hamidsec" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com/hamidsec" class="social-link" aria-label="Twitter" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://tryhackme.com/p/hamidsec" class="social-link" aria-label="TryHackMe" target="_blank" rel="noopener noreferrer"><i class="fas fa-flag"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#reports">Reports</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#rules">Detection Rules</a></li>
+            <li><a href="#playbooks">Playbooks</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#certs">Certifications</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Connect</h4>
+          <ul class="footer-links">
+            <li><a href="https://github.com/hamidsec" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/hamidsec" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://twitter.com/hamidsec" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            <li><a href="mailto:hamid@securityops.dev">Email</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2024 Hamid. All rights reserved. Built with security in mind.</p>
+        <button class="footer-backtop" id="footerBackTop">
+          <i class="fas fa-arrow-up"></i> Back to Top
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="main.js"></script>
+</body>
+</html>
